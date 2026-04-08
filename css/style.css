@@ -259,7 +259,7 @@ input, textarea, select {
     box-shadow: 0 8px 20px rgba(45, 74, 115, 0.2);
 }
 
-/* スマホ固定CTA - 目立つデザイン */
+/* スマホ固定CTA - コンパクトデザイン */
 @media (max-width: 768px) {
     .mobile-fixed-cta {
         position: fixed;
@@ -267,12 +267,12 @@ input, textarea, select {
         left: 0;
         right: 0;
         z-index: 100;
-        background: linear-gradient(135deg, rgba(15, 20, 25, 0.98) 0%, rgba(26, 43, 74, 0.98) 100%);
-        padding: 16px;
-        box-shadow: 0 -8px 32px rgba(0, 0, 0, 0.25), 0 -4px 16px rgba(45, 74, 115, 0.2);
+        background: linear-gradient(135deg, rgba(15, 20, 25, 0.95) 0%, rgba(26, 43, 74, 0.95) 100%);
+        padding: 8px 12px;
+        box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.2);
         animation: slideUp 0.5s ease-out;
-        backdrop-filter: blur(20px);
-        border-top: 2px solid rgba(217, 119, 6, 0.3);
+        backdrop-filter: blur(15px);
+        border-top: 1px solid rgba(217, 119, 6, 0.3);
     }
     
     @keyframes slideUp {
@@ -289,25 +289,24 @@ input, textarea, select {
         background: linear-gradient(135deg, #f97316 0%, #ef4444 100%);
         color: #ffffff;
         text-align: center;
-        padding: 20px;
-        border-radius: 16px;
-        font-weight: 900;
-        font-size: 18px;
+        padding: 12px 16px;
+        border-radius: 10px;
+        font-weight: 700;
+        font-size: 15px;
         text-decoration: none;
-        box-shadow: 0 8px 32px rgba(239, 68, 68, 0.5), 0 4px 16px rgba(249, 115, 22, 0.4), inset 0 2px 0 rgba(255, 255, 255, 0.3);
-        letter-spacing: 0.1em;
+        box-shadow: 0 4px 16px rgba(239, 68, 68, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        letter-spacing: 0.05em;
         transition: all 0.3s ease;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-        border: 2px solid rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.1);
     }
     
     .mobile-fixed-cta a:active {
         transform: scale(0.98);
-        box-shadow: 0 4px 16px rgba(239, 68, 68, 0.4), 0 2px 8px rgba(249, 115, 22, 0.3);
+        box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3);
     }
     
     body {
-        padding-bottom: 90px;
+        padding-bottom: 50px;
     }
 }
 

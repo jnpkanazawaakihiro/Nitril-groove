@@ -231,47 +231,51 @@
             
             <!-- 商品ラインナップカード -->
             <div id="products" class="max-w-6xl mx-auto mb-6 md:mb-8">
-                <div class="grid md:grid-cols-2 gap-6 md:gap-8">
+                <div class="grid md:grid-cols-2 gap-6 md:gap-8 items-stretch">
                     <!-- 商品１ -->
-                    <div class="bg-white rounded-2xl premium-shadow-lg overflow-hidden transform hover:scale-[1.02] transition-all duration-500 border-2 border-gray-100 hover:border-blue-200">
-                        <div class="product-image-container" style="height: 320px;">
+                    <div class="bg-white rounded-2xl premium-shadow-lg overflow-hidden border-2 border-gray-100 hover:border-blue-200 hover:shadow-2xl transition-all duration-300 flex flex-col">
+                        <div class="product-image-container" style="height: 280px;">
                             <img src="images/product-kw-white.png" alt="ニトリルグローブ KW ホワイト" class="product-image">
                         </div>
-                        <div class="p-5 md:p-10 bg-gradient-to-br from-blue-50 via-white to-white flex flex-col min-h-[600px]">
-                            <div class="text-center mb-6" style="min-height: 180px;">
+                        <div class="p-6 bg-gradient-to-br from-blue-50 via-white to-white flex flex-col flex-1">
+                            <div class="text-center mb-5">
                                 <div class="inline-block bg-blue-900 text-white px-3 py-1 rounded-full text-xs font-bold mb-3">
                                     商品 1
                                 </div>
-                                <h3 class="text-xl md:text-3xl font-bold text-gray-900 mb-2">ニトリルグローブ KW</h3>
-                                <p class="text-gray-700 font-medium mb-2">ホワイト（パウダーフリー）</p>
-                                <div style="height: 32px;"></div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3">ニトリルグローブ KW</h3>
+                                <div class="flex flex-wrap justify-center gap-2 mb-2">
+                                    <span class="inline-flex items-center gap-1 bg-white border-2 border-blue-300 text-blue-800 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm">
+                                        <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><circle cx="10" cy="10" r="3"/><path d="M10 0a10 10 0 100 20A10 10 0 0010 0zm0 2a8 8 0 110 16A8 8 0 0110 2z" opacity="0.3"/></svg>
+                                        ホワイト
+                                    </span>
+                                    <span class="inline-flex items-center gap-1 bg-white border-2 border-green-300 text-green-800 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm">
+                                        ✓ パウダーフリー
+                                    </span>
+                                </div>
+                                <p class="text-xs text-gray-500 font-medium" style="font-family: 'Noto Sans JP', sans-serif;">国内メーカー｜<span class="text-blue-700 font-semibold">SSK全薬株式会社</span></p>
                             </div>
                             
-                            <div class="space-y-3 mb-6">
-                                <div class="flex justify-between items-center py-3 border-b border-gray-200" style="min-height: 56px;">
-                                    <span class="text-gray-600 font-medium">入数</span>
-                                    <span class="font-bold text-gray-900">200枚×10箱</span>
+                            <div class="space-y-2 mb-4">
+                                <div class="flex justify-between items-center py-2 border-b border-gray-200">
+                                    <span class="text-gray-600 font-medium text-sm">入数</span>
+                                    <span class="font-bold text-gray-900 text-sm">200枚×10箱</span>
                                 </div>
-                                <div class="flex justify-between items-center py-4 bg-blue-50 px-4 rounded-lg border-2 border-blue-200" style="min-height: 80px;">
-                                    <span class="text-gray-700 font-semibold">合計</span>
-                                    <span class="number-emphasis text-3xl md:text-4xl text-blue-900">2,000<span class="text-lg md:text-xl">枚</span></span>
+                                <div class="flex justify-between items-center py-3 bg-blue-50 px-4 rounded-lg border-2 border-blue-200">
+                                    <span class="text-gray-700 font-semibold text-sm">合計</span>
+                                    <span class="number-emphasis text-2xl md:text-3xl text-blue-900">2,000<span class="text-base md:text-lg">枚</span></span>
                                 </div>
-                                <div class="flex justify-between items-center py-3 border-b border-gray-200" style="min-height: 56px;">
-                                    <span class="text-gray-600 font-medium">サイズ</span>
-                                    <span class="font-bold text-gray-900">XS / S / M / L</span>
+                                <div class="flex justify-between items-center py-2 border-b border-gray-200">
+                                    <span class="text-gray-600 font-medium text-sm">原産国</span>
+                                    <span class="font-bold text-gray-900 text-sm">マレーシア</span>
                                 </div>
-                                <div class="flex justify-between items-center py-3 border-b border-gray-200" style="min-height: 56px;">
-                                    <span class="text-gray-600 font-medium">原産国</span>
-                                    <span class="font-bold text-gray-900">マレーシア</span>
-                                </div>
-                                <div class="flex justify-between items-center py-5 bg-gradient-to-r from-amber-50 via-yellow-50 to-amber-50 px-5 rounded-xl border-2 border-amber-300 mt-4 shadow-md" style="min-height: 100px;">
+                                <div class="flex justify-between items-center py-3 bg-gradient-to-r from-amber-50 via-yellow-50 to-amber-50 px-4 rounded-xl border-2 border-amber-300 shadow-md">
                                     <div>
-                                        <div class="text-xs text-gray-600 font-medium mb-1">定価（参考価格）</div>
-                                        <div class="text-gray-700 font-semibold text-sm">個別見積対応</div>
+                                        <div class="text-xs text-gray-600 font-medium mb-0.5">定価（参考価格）</div>
+                                        <div class="text-gray-700 font-semibold text-xs">個別見積対応</div>
                                     </div>
                                     <div class="text-right">
-                                        <div class="number-emphasis text-3xl md:text-4xl" style="white-space: nowrap;">13,000円</div>
-                                        <div class="text-xs text-gray-600 mt-1 font-medium">(税抜)</div>
+                                        <div class="number-emphasis text-2xl md:text-3xl" style="white-space: nowrap;">13,000円</div>
+                                        <div class="text-xs text-gray-600 mt-0.5 font-medium">(税抜)</div>
                                     </div>
                                 </div>
                             </div>
@@ -284,47 +288,51 @@
                     </div>
                     
                     <!-- 商品２ -->
-                    <div class="bg-white rounded-2xl premium-shadow-lg overflow-hidden transform hover:scale-[1.02] transition-all duration-500 border-2 border-gray-100 hover:border-purple-200">
-                        <div class="product-image-container" style="height: 320px;">
+                    <div class="bg-white rounded-2xl premium-shadow-lg overflow-hidden border-2 border-gray-100 hover:border-purple-200 hover:shadow-2xl transition-all duration-300 flex flex-col">
+                        <div class="product-image-container" style="height: 280px;">
                             <img src="images/product-dahlia-purple.png" alt="検査検診用ニトリルグローブ ダリア" class="product-image">
                         </div>
-                        <div class="p-5 md:p-10 bg-gradient-to-br from-purple-50 via-white to-white flex flex-col min-h-[600px]">
-                            <div class="text-center mb-6" style="min-height: 180px;">
+                        <div class="p-6 bg-gradient-to-br from-purple-50 via-white to-white flex flex-col flex-1">
+                            <div class="text-center mb-5">
                                 <div class="inline-block bg-purple-900 text-white px-3 py-1 rounded-full text-xs font-bold mb-3">
                                     商品 2
                                 </div>
-                                <h3 class="text-xl md:text-3xl font-bold text-gray-900 mb-2">検査検診用<br>ニトリルグローブ</h3>
-                                <p class="text-gray-700 font-medium mb-2">ダリア（パープル）</p>
-                                <div class="inline-block bg-purple-100 border border-purple-300 rounded-lg px-3 py-1.5 mt-1">
-                                    <p class="text-xs text-purple-900 font-bold">一般医療機器</p>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-1">検査検診用<br>ニトリルグローブ ダリア</h3>
+                                <div class="flex flex-wrap justify-center gap-2 mb-2">
+                                    <span class="inline-flex items-center gap-1 bg-white border-2 border-purple-300 text-purple-800 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm">
+                                        🟣 パープル
+                                    </span>
+                                    <span class="inline-flex items-center gap-1 bg-white border-2 border-red-300 text-red-700 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm">
+                                        🏥 一般医療機器
+                                    </span>
+                                    <span class="inline-flex items-center gap-1 bg-white border-2 border-green-300 text-green-800 text-xs font-bold px-3 py-1.5 rounded-full shadow-sm">
+                                        ✓ パウダーフリー
+                                    </span>
                                 </div>
+                                <p class="text-xs text-gray-500 font-medium" style="font-family: 'Noto Sans JP', sans-serif;">国内メーカー｜<span class="text-purple-700 font-semibold">川西工業株式会社</span></p>
                             </div>
                             
-                            <div class="space-y-3 mb-6">
-                                <div class="flex justify-between items-center py-3 border-b border-gray-200" style="min-height: 56px;">
-                                    <span class="text-gray-600 font-medium">入数</span>
-                                    <span class="font-bold text-gray-900">250枚×8箱</span>
+                            <div class="space-y-2 mb-4">
+                                <div class="flex justify-between items-center py-2 border-b border-gray-200">
+                                    <span class="text-gray-600 font-medium text-sm">入数</span>
+                                    <span class="font-bold text-gray-900 text-sm">250枚×8箱</span>
                                 </div>
-                                <div class="flex justify-between items-center py-4 bg-purple-50 px-4 rounded-lg border-2 border-purple-200" style="min-height: 80px;">
-                                    <span class="text-gray-700 font-semibold">合計</span>
-                                    <span class="number-emphasis text-3xl md:text-4xl text-purple-900">2,000<span class="text-lg md:text-xl">枚</span></span>
+                                <div class="flex justify-between items-center py-3 bg-purple-50 px-4 rounded-lg border-2 border-purple-200">
+                                    <span class="text-gray-700 font-semibold text-sm">合計</span>
+                                    <span class="number-emphasis text-2xl md:text-3xl text-purple-900">2,000<span class="text-base md:text-lg">枚</span></span>
                                 </div>
-                                <div class="flex justify-between items-center py-3 border-b border-gray-200" style="min-height: 56px;">
-                                    <span class="text-gray-600 font-medium">サイズ</span>
-                                    <span class="font-bold text-gray-900">XS / S / M / L</span>
+                                <div class="flex justify-between items-center py-2 border-b border-gray-200">
+                                    <span class="text-gray-600 font-medium text-sm">原産国</span>
+                                    <span class="font-bold text-gray-900 text-sm">タイ</span>
                                 </div>
-                                <div class="flex justify-between items-center py-3 border-b border-gray-200" style="min-height: 56px;">
-                                    <span class="text-gray-600 font-medium">原産国</span>
-                                    <span class="font-bold text-gray-900">タイ</span>
-                                </div>
-                                <div class="flex justify-between items-center py-5 bg-gradient-to-r from-amber-50 via-yellow-50 to-amber-50 px-5 rounded-xl border-2 border-amber-300 mt-4 shadow-md" style="min-height: 100px;">
+                                <div class="flex justify-between items-center py-3 bg-gradient-to-r from-amber-50 via-yellow-50 to-amber-50 px-4 rounded-xl border-2 border-amber-300 shadow-md">
                                     <div>
-                                        <div class="text-xs text-gray-600 font-medium mb-1">定価（参考価格）</div>
-                                        <div class="text-gray-700 font-semibold text-sm">個別見積対応</div>
+                                        <div class="text-xs text-gray-600 font-medium mb-0.5">定価（参考価格）</div>
+                                        <div class="text-gray-700 font-semibold text-xs">個別見積対応</div>
                                     </div>
                                     <div class="text-right">
-                                        <div class="number-emphasis text-3xl md:text-4xl" style="white-space: nowrap;">12,000円</div>
-                                        <div class="text-xs text-gray-600 mt-1 font-medium">(税抜)</div>
+                                        <div class="number-emphasis text-2xl md:text-3xl" style="white-space: nowrap;">12,000円</div>
+                                        <div class="text-xs text-gray-600 mt-0.5 font-medium">(税抜)</div>
                                     </div>
                                 </div>
                             </div>
@@ -462,10 +470,10 @@
             </div>
             
             <div class="mt-16 max-w-4xl mx-auto">
-                <div class="bg-gradient-to-r from-blue-50 via-white to-blue-50 rounded-2xl p-10 border-2 border-blue-100 shadow-xl">
-                    <p class="text-center text-gray-700 leading-relaxed text-xl">
-                        手袋は毎日使うものだからこそ、単に<span class="text-red-600 font-bold">"安い手袋"</span>ではなく、<br class="hidden md:block">
-                        <span class="font-bold text-blue-900 text-2xl">日常運用しやすく、必要量を相談しやすい製品選定と供給体制</span>が重要になります。
+                <div class="bg-gradient-to-r from-blue-50 via-white to-blue-50 rounded-2xl p-8 md:p-10 border-2 border-blue-100 shadow-xl">
+                    <p class="text-center text-gray-700 leading-relaxed text-base md:text-xl" style="word-break: keep-all; overflow-wrap: break-word;">
+                        手袋は毎日使うものだからこそ、単に<span class="text-red-600 font-bold">"安い手袋"</span>ではなく、<br class="hidden lg:block">
+                        <span class="font-bold text-blue-900 text-lg md:text-xl lg:text-2xl">日常運用しやすく、必要量を相談しやすい製品選定と供給体制</span>が重要になります。
                     </p>
                 </div>
             </div>
@@ -579,7 +587,7 @@
                         </div>
                     </div>
                     
-                    <div class="bg-gradient-to-r from-blue-50 via-white to-blue-50 p-5 md:p-8 rounded-xl border-l-4 border-blue-600">
+                    <div class="bg-gradient-to-r from-blue-50 via-white to-blue-50 p-5 md:p-8 rounded-xl border-l-4 border-blue-600" style="margin-bottom: 0;">
                         <h4 class="font-bold text-gray-900 mb-3 md:mb-4 text-base md:text-xl">現場に近いからこそ、選定基準が違います</h4>
                         <div class="space-y-3 md:space-y-4 text-gray-700 leading-relaxed text-sm md:text-base">
                             <p>
@@ -594,7 +602,7 @@
                     </div>
                     
                     <!-- 管理医療機器販売業届出 -->
-                    <div class="bg-gradient-to-br from-green-50 to-white p-5 md:p-8 rounded-xl border-2 border-green-300 shadow-lg mb-6 md:mb-8">
+                    <div class="bg-gradient-to-br from-green-50 to-white p-5 md:p-8 rounded-xl border-2 border-green-300 shadow-lg mb-6 md:mb-8" style="margin-top: 32px;">
                         <div class="flex items-start gap-3 md:gap-4">
                             <div class="flex-shrink-0">
                                 <div class="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center shadow-lg">
@@ -690,7 +698,11 @@
                             <div class="inline-block bg-blue-900 text-white px-4 py-2 rounded-full text-sm font-bold mb-4 self-start">
                                 商品 1
                             </div>
-                            <h3 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">ニトリルグローブ KW<br>ホワイト（パウダーフリー）</h3>
+                            <h3 class="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">ニトリルグローブ KW</h3>
+                            <div class="flex flex-wrap gap-2 mt-2 mb-1">
+                                <span class="inline-flex items-center gap-1 bg-white border-2 border-blue-300 text-blue-800 text-sm font-bold px-3 py-1 rounded-full shadow-sm">○ ホワイト</span>
+                                <span class="inline-flex items-center gap-1 bg-white border-2 border-green-300 text-green-800 text-sm font-bold px-3 py-1 rounded-full shadow-sm">✓ パウダーフリー</span>
+                            </div>
                             
                             <div class="mt-4 mb-5 inline-block">
                                 <div class="bg-gradient-to-r from-blue-100 to-blue-50 border-2 border-blue-300 rounded-xl px-5 py-3 shadow-sm">
@@ -731,6 +743,7 @@
                     </div>
                     
                     <div class="grid md:grid-cols-2 gap-8 mb-8 px-6 md:px-10">
+                        <!-- 左列：基本情報 + サイズ手イラスト -->
                         <div>
                             <h4 class="font-bold text-gray-900 mb-4">基本情報</h4>
                             <table class="w-full">
@@ -764,6 +777,69 @@
                                     </tr>
                                 </tbody>
                             </table>
+                            <!-- KW サイズ別 手のイラスト -->
+                            <div class="mt-6 bg-blue-50 rounded-xl p-5 border border-blue-100">
+                                <h4 class="font-bold text-blue-900 mb-4 text-sm">📐 サイズ別寸法（着用サイズの目安）</h4>
+                                <div class="flex items-end justify-around mb-4" style="height:110px;">
+                                    <!-- XS hand -->
+                                    <div class="flex flex-col items-center gap-1.5">
+                                        <svg width="38" height="80" viewBox="0 0 38 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <!-- 人差し指 --><rect x="13" y="14" width="7" height="30" rx="3.5" fill="#bfdbfe" stroke="#93c5fd" stroke-width="0.8"/>
+                                            <!-- 中指（最長） --><rect x="21" y="9" width="7" height="35" rx="3.5" fill="#93c5fd" stroke="#60a5fa" stroke-width="0.8"/>
+                                            <!-- 薬指 --><rect x="29" y="13" width="7" height="31" rx="3.5" fill="#bfdbfe" stroke="#93c5fd" stroke-width="0.8"/>
+                                            <!-- 小指 --><rect x="37" y="19" width="6" height="25" rx="3" fill="#dbeafe" stroke="#bfdbfe" stroke-width="0.8"/>
+                                            <!-- 親指 --><rect x="3" y="26" width="9" height="18" rx="4.5" fill="#dbeafe" stroke="#bfdbfe" stroke-width="0.8" transform="rotate(-15 3 26)"/>
+                                            <!-- 手のひら --><rect x="9" y="40" width="35" height="28" rx="6" fill="#3b82f6"/>
+                                            <text x="26" y="59" text-anchor="middle" font-size="9" fill="white" font-weight="bold" font-family="Arial">75</text>
+                                            <text x="26" y="68" text-anchor="middle" font-size="6" fill="#bfdbfe" font-family="Arial">mm</text>
+                                        </svg>
+                                        <span class="text-xs font-black text-blue-700 bg-blue-100 px-2 py-0.5 rounded-full">XS</span>
+                                    </div>
+                                    <!-- S hand -->
+                                    <div class="flex flex-col items-center gap-1.5">
+                                        <svg width="42" height="88" viewBox="0 0 42 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="14" y="12" width="7.5" height="34" rx="3.75" fill="#93c5fd" stroke="#60a5fa" stroke-width="0.8"/>
+                                            <rect x="22.5" y="7" width="7.5" height="39" rx="3.75" fill="#60a5fa" stroke="#3b82f6" stroke-width="0.8"/>
+                                            <rect x="31" y="11" width="7.5" height="35" rx="3.75" fill="#93c5fd" stroke="#60a5fa" stroke-width="0.8"/>
+                                            <rect x="39.5" y="18" width="6.5" height="28" rx="3.25" fill="#bfdbfe" stroke="#93c5fd" stroke-width="0.8"/>
+                                            <rect x="3" y="26" width="10" height="20" rx="5" fill="#bfdbfe" stroke="#93c5fd" stroke-width="0.8" transform="rotate(-15 3 26)"/>
+                                            <rect x="10" y="44" width="38" height="31" rx="7" fill="#2563eb"/>
+                                            <text x="29" y="64" text-anchor="middle" font-size="9.5" fill="white" font-weight="bold" font-family="Arial">85</text>
+                                            <text x="29" y="74" text-anchor="middle" font-size="6" fill="#bfdbfe" font-family="Arial">mm</text>
+                                        </svg>
+                                        <span class="text-xs font-black text-blue-700 bg-blue-100 px-2 py-0.5 rounded-full">S</span>
+                                    </div>
+                                    <!-- M hand -->
+                                    <div class="flex flex-col items-center gap-1.5">
+                                        <svg width="47" height="96" viewBox="0 0 47 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="15" y="10" width="8" height="38" rx="4" fill="#60a5fa" stroke="#3b82f6" stroke-width="0.8"/>
+                                            <rect x="24" y="5" width="8" height="43" rx="4" fill="#3b82f6" stroke="#1d4ed8" stroke-width="0.8"/>
+                                            <rect x="33" y="9" width="8" height="39" rx="4" fill="#60a5fa" stroke="#3b82f6" stroke-width="0.8"/>
+                                            <rect x="42" y="16" width="7" height="32" rx="3.5" fill="#93c5fd" stroke="#60a5fa" stroke-width="0.8"/>
+                                            <rect x="3" y="27" width="11" height="22" rx="5.5" fill="#93c5fd" stroke="#60a5fa" stroke-width="0.8" transform="rotate(-15 3 27)"/>
+                                            <rect x="11" y="46" width="42" height="35" rx="8" fill="#1d4ed8"/>
+                                            <text x="32" y="68" text-anchor="middle" font-size="10" fill="white" font-weight="bold" font-family="Arial">95</text>
+                                            <text x="32" y="78" text-anchor="middle" font-size="6.5" fill="#bfdbfe" font-family="Arial">mm</text>
+                                        </svg>
+                                        <span class="text-xs font-black text-blue-800 bg-blue-200 px-2 py-0.5 rounded-full">M</span>
+                                    </div>
+                                    <!-- L hand -->
+                                    <div class="flex flex-col items-center gap-1.5">
+                                        <svg width="52" height="104" viewBox="0 0 52 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="16" y="8" width="9" height="42" rx="4.5" fill="#3b82f6" stroke="#1d4ed8" stroke-width="0.8"/>
+                                            <rect x="26" y="3" width="9" height="47" rx="4.5" fill="#1d4ed8" stroke="#1e40af" stroke-width="0.8"/>
+                                            <rect x="36" y="7" width="9" height="43" rx="4.5" fill="#3b82f6" stroke="#1d4ed8" stroke-width="0.8"/>
+                                            <rect x="46" y="14" width="8" height="36" rx="4" fill="#60a5fa" stroke="#3b82f6" stroke-width="0.8"/>
+                                            <rect x="3" y="28" width="12" height="24" rx="6" fill="#60a5fa" stroke="#3b82f6" stroke-width="0.8" transform="rotate(-15 3 28)"/>
+                                            <rect x="12" y="48" width="46" height="40" rx="9" fill="#1e40af"/>
+                                            <text x="35" y="73" text-anchor="middle" font-size="11" fill="white" font-weight="bold" font-family="Arial">106</text>
+                                            <text x="35" y="84" text-anchor="middle" font-size="6.5" fill="#bfdbfe" font-family="Arial">mm</text>
+                                        </svg>
+                                        <span class="text-xs font-black text-blue-900 bg-blue-200 px-2 py-0.5 rounded-full">L</span>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500 text-center">※ 手のひらの幅（±5mm）</p>
+                            </div>
                         </div>
                         
                         <div>
@@ -966,6 +1042,7 @@
                     </div>
                     
                     <div class="grid md:grid-cols-2 gap-8 mb-8 px-6 md:px-10">
+                        <!-- 左列：基本情報 + サイズ手イラスト（ダリア） -->
                         <div>
                             <h4 class="font-bold text-gray-900 mb-4">基本情報</h4>
                             <table class="w-full">
@@ -1003,6 +1080,69 @@
                                     </tr>
                                 </tbody>
                             </table>
+                            <!-- ダリア サイズ別 手のイラスト -->
+                            <div class="mt-6 bg-purple-50 rounded-xl p-5 border border-purple-100">
+                                <h4 class="font-bold text-purple-900 mb-4 text-sm">📐 サイズ別寸法（着用サイズの目安）</h4>
+                                <div class="flex items-end justify-around mb-4" style="height:110px;">
+                                    <!-- XS -->
+                                    <div class="flex flex-col items-center gap-1.5">
+                                        <svg width="38" height="80" viewBox="0 0 38 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="13" y="14" width="7" height="30" rx="3.5" fill="#ddd6fe" stroke="#c4b5fd" stroke-width="0.8"/>
+                                            <rect x="21" y="9" width="7" height="35" rx="3.5" fill="#c4b5fd" stroke="#a78bfa" stroke-width="0.8"/>
+                                            <rect x="29" y="13" width="7" height="31" rx="3.5" fill="#ddd6fe" stroke="#c4b5fd" stroke-width="0.8"/>
+                                            <rect x="37" y="19" width="6" height="25" rx="3" fill="#ede9fe" stroke="#ddd6fe" stroke-width="0.8"/>
+                                            <rect x="3" y="26" width="9" height="18" rx="4.5" fill="#ede9fe" stroke="#ddd6fe" stroke-width="0.8" transform="rotate(-15 3 26)"/>
+                                            <rect x="9" y="40" width="35" height="28" rx="6" fill="#7c3aed"/>
+                                            <text x="26" y="57" text-anchor="middle" font-size="7" fill="white" font-weight="bold" font-family="Arial">&lt;160</text>
+                                            <text x="26" y="66" text-anchor="middle" font-size="6" fill="#ddd6fe" font-family="Arial">mm</text>
+                                        </svg>
+                                        <span class="text-xs font-black text-purple-700 bg-purple-100 px-2 py-0.5 rounded-full">XS</span>
+                                    </div>
+                                    <!-- S -->
+                                    <div class="flex flex-col items-center gap-1.5">
+                                        <svg width="42" height="88" viewBox="0 0 42 88" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="14" y="12" width="7.5" height="34" rx="3.75" fill="#c4b5fd" stroke="#a78bfa" stroke-width="0.8"/>
+                                            <rect x="22.5" y="7" width="7.5" height="39" rx="3.75" fill="#a78bfa" stroke="#8b5cf6" stroke-width="0.8"/>
+                                            <rect x="31" y="11" width="7.5" height="35" rx="3.75" fill="#c4b5fd" stroke="#a78bfa" stroke-width="0.8"/>
+                                            <rect x="39.5" y="18" width="6.5" height="28" rx="3.25" fill="#ddd6fe" stroke="#c4b5fd" stroke-width="0.8"/>
+                                            <rect x="3" y="26" width="10" height="20" rx="5" fill="#ddd6fe" stroke="#c4b5fd" stroke-width="0.8" transform="rotate(-15 3 26)"/>
+                                            <rect x="10" y="44" width="38" height="31" rx="7" fill="#6d28d9"/>
+                                            <text x="29" y="63" text-anchor="middle" font-size="9" fill="white" font-weight="bold" font-family="Arial">160</text>
+                                            <text x="29" y="73" text-anchor="middle" font-size="6" fill="#ddd6fe" font-family="Arial">mm</text>
+                                        </svg>
+                                        <span class="text-xs font-black text-purple-700 bg-purple-100 px-2 py-0.5 rounded-full">S</span>
+                                    </div>
+                                    <!-- M -->
+                                    <div class="flex flex-col items-center gap-1.5">
+                                        <svg width="47" height="96" viewBox="0 0 47 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="15" y="10" width="8" height="38" rx="4" fill="#a78bfa" stroke="#8b5cf6" stroke-width="0.8"/>
+                                            <rect x="24" y="5" width="8" height="43" rx="4" fill="#8b5cf6" stroke="#7c3aed" stroke-width="0.8"/>
+                                            <rect x="33" y="9" width="8" height="39" rx="4" fill="#a78bfa" stroke="#8b5cf6" stroke-width="0.8"/>
+                                            <rect x="42" y="16" width="7" height="32" rx="3.5" fill="#c4b5fd" stroke="#a78bfa" stroke-width="0.8"/>
+                                            <rect x="3" y="27" width="11" height="22" rx="5.5" fill="#c4b5fd" stroke="#a78bfa" stroke-width="0.8" transform="rotate(-15 3 27)"/>
+                                            <rect x="11" y="46" width="42" height="35" rx="8" fill="#5b21b6"/>
+                                            <text x="32" y="67" text-anchor="middle" font-size="9" fill="white" font-weight="bold" font-family="Arial">190</text>
+                                            <text x="32" y="77" text-anchor="middle" font-size="6.5" fill="#ddd6fe" font-family="Arial">mm</text>
+                                        </svg>
+                                        <span class="text-xs font-black text-purple-800 bg-purple-200 px-2 py-0.5 rounded-full">M</span>
+                                    </div>
+                                    <!-- L -->
+                                    <div class="flex flex-col items-center gap-1.5">
+                                        <svg width="52" height="104" viewBox="0 0 52 104" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect x="16" y="8" width="9" height="42" rx="4.5" fill="#8b5cf6" stroke="#7c3aed" stroke-width="0.8"/>
+                                            <rect x="26" y="3" width="9" height="47" rx="4.5" fill="#7c3aed" stroke="#5b21b6" stroke-width="0.8"/>
+                                            <rect x="36" y="7" width="9" height="43" rx="4.5" fill="#8b5cf6" stroke="#7c3aed" stroke-width="0.8"/>
+                                            <rect x="46" y="14" width="8" height="36" rx="4" fill="#a78bfa" stroke="#8b5cf6" stroke-width="0.8"/>
+                                            <rect x="3" y="28" width="12" height="24" rx="6" fill="#a78bfa" stroke="#8b5cf6" stroke-width="0.8" transform="rotate(-15 3 28)"/>
+                                            <rect x="12" y="48" width="46" height="40" rx="9" fill="#4c1d95"/>
+                                            <text x="35" y="72" text-anchor="middle" font-size="9" fill="white" font-weight="bold" font-family="Arial">220</text>
+                                            <text x="35" y="82" text-anchor="middle" font-size="6.5" fill="#ddd6fe" font-family="Arial">mm</text>
+                                        </svg>
+                                        <span class="text-xs font-black text-purple-900 bg-purple-200 px-2 py-0.5 rounded-full">L</span>
+                                    </div>
+                                </div>
+                                <p class="text-xs text-gray-500 text-center">※ 手のひら回り（XS: &lt;160 / S: 160 / M: 190 / L: 220mm）</p>
+                            </div>
                         </div>
                         
                         <div>
